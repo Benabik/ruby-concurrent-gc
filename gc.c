@@ -1245,6 +1245,7 @@ rb_newobj(void)
 	}
     }
     fprintf(timing_file, "%lld\n", end - start);
+    fflush(timing_file);
 
     return obj;
 }
